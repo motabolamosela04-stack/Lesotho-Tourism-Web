@@ -1,0 +1,63 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  font-size: 14px;
+  background:url(12.pic);  
+  background-size: cover;
+  background-position: center;
+
+body::before{
+  content:"";
+  position: fixed; inset:0;
+  background: rgba(255,255,255,0.85);
+  z-index:-1;
+}
+header{background:#003366;color:#fff;text-align:center;padding:22px;letter-spacing:.5px}
+nav{background:#0055a5;padding:12px;text-align:center}
+nav a{color:#fff;margin:12px;text-decoration:none;font-weight:bold;position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:3px;background:#ffcc00;transition:.3s}
+nav a:hover::after{width:100%}
+
+.content{
+  width: 88%;
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 24px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  animation: fadeUp 1.2s ease;
+}
+@keyframes fadeUp{
+  from{opacity:0; transform: translateY(40px)}
+  to{opacity:1; transform: translateY(0)}
+}
+
+img{width:700; height: 100; border-radius:10px; margin:12px 0; transition:.5s}
+img:hover{transform:scale(1.05)}
+
+table{width:100%; border-collapse:collapse; margin:16px 0}
+th,td{border:1px solid #333; padding:10px}
+th{background:#003366; color:#fff}
+
+/* Slider */
+.slider{width:100%; height:350px; overflow:hidden; border-radius:10px; margin-bottom:20px}
+.slides{display:flex; width:400%}
+.slides img{width:100%; height:350px; object-fit:cover}
+.controls{display:flex; justify-content:space-between; margin-top:-50px; position:relative}
+.controls button{
+  background:rgba(0,0,0,.5); color:#fff; border:none; padding:10px 14px; cursor:pointer; border-radius:50%
+}
+
+/* Gallery */
+.gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:15px}
+
+.gallery img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+footer{background:#003366;color:#fff;text-align:center;padding:12px;margin-top:20px}
