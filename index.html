@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Home</h1></header>
+<div class="container">
+  <div class="logo">KINGDOM<span>IN</span>THE<span>SKY</span></div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="attractions.html">Attractions</a>
+<a href="tips.html">Travel Tips</a>
+<a href="blog.html">Travel Stories</a>
+<a href="gallery.html">Gallery</a>
+<a href="About.html">About Lesotho</a>
+<a href="references.html">References</a>
+</nav>
+
+<section class="content">
+
+<div class="slider">
+  <div class="slides" id="slides">
+    <img src="9.jpg" alt="Bokong landscape">
+    <img src="6.jpg" alt="Maloti mountains">
+    <img src="5.jpg" alt="Waterfall">
+    <img src="10.jpg" alt="Hiking experience">
+  </div>
+</div>
+<div class="controls">
+  <button onclick="prev()">❮</button>
+  <button onclick="next()">❯</button>
+</div>
+<script>
+let i=0;
+const s=document.getElementById('slides');
+const total=4;
+function show(){ s.style.marginLeft = '-' + (i*100) + '%'; }
+function next(){ i=(i+1)%total; show(); }
+function prev(){ i=(i-1+total)%total; show(); }
+let auto=setInterval(next,4000);
+document.querySelector('.slider').addEventListener('mouseover',()=>clearInterval(auto));
+document.querySelector('.slider').addEventListener('mouseout',()=>auto=setInterval(next,4000));
+</script>
+
+<p>Lesotho, known as the Kingdom in the Sky, is a mountainous country entirely surrounded by South Africa, with most land above 1,400 meters. This elevation shapes its climate, biodiversity, and tourism appeal, making it ideal for eco-tourism and adventure travel. The country offers untouched landscapes and authentic cultural experiences that differentiate it from mass tourism destinations. Tourism development focuses on sustainability and community participation to ensure long-term benefits. The sector contributes to economic diversification and employment creation. As a result, Lesotho continues to grow as a niche tourism destination (World Bank, 2023).</p>
+
+<p>Lesotho offers breathtaking mountain landscapes, rich cultural heritage, and unique highland experiences. Visitors can explore iconic attractions such as Maletsunyane Falls, one of Africa’s highest single-drop waterfalls, or enjoy scenic drives through the dramatic Sani Pass. Cultural tourism is also significant, with Thaba Bosiu representing the historical heart of the Basotho nation. Adventure tourism activities such as hiking, pony trekking, and dam tours at Katse Dam continue to attract both domestic and international tourists. Lesotho offers breathtaking mountain landscapes, rich cultural heritage, and unique highland experiences. Visitors can explore iconic attractions such as Maletsunyane Falls, one of Africa’s highest single-drop waterfalls, or enjoy scenic drives through the dramatic Sani Pass. Cultural tourism is also significant, with Thaba Bosiu representing the historical heart of the Basotho nation. Adventure tourism activities such as hiking, pony trekking, and dam tours at Katse Dam continue to attract both domestic and international tourists. expanded with more descriptive tourism insights about Lesotho.</p>
+
+<p>Tourism in Lesotho emphasizes natural beauty, cultural heritage, and responsible travel experiences that attract global visitors. Activities such as hiking, pony trekking, and cultural exploration highlight the country’s uniqueness. Community-based tourism ensures local participation and equitable economic benefits. This aligns with global sustainable tourism trends that prioritize environmental conservation. Infrastructure improvements are enhancing accessibility and visitor satisfaction. These developments strengthen Lesotho’s position in the regional tourism market. Consequently, tourism remains a key driver of growth (Government of Lesotho, 2021).</p>
+
+<p> Our website is your guide to experiencing Lesotho saftly, respoctfully, and fully. We promise honest information, clear travel tips, and stories from real photos , not stock images, showing the true colours of our land. We believe tourism must benefit communities, so we highlight Basotho-owned lodges and guides. Expect details on costs, transport, and weather so you can plan with confidence. Your trip should leave you richer and leave lesotho better. If we wouldnot recommend it to our own family, it'e not here.</p>
+
+<p>Lesotho is calling and it's closer than you think. Just a 4hour drive from Johannesburg or a quick flight to Moshoeshoe 1 airport. No visa is needed for most SADC, EU, and US travelers, i can tell there is nothing better than this no visa! it my sound like a dream but it's a Dream come true. the best time to start iplanning is no, becuase winter snow and summers green and hiking both book up fast. click Top Attraction and see meracles, and build your dream itinerary today. follow our Gallery to see Lesotho through local eyes. Have Questions? Our contacts page connects you to real people available 24-7, not bots. your Kingdom in the sky the only kingdom to own. COME BEFORE THE SECRET GETS OUT. </p>
+
+
+
+
+<p>The reserve promotes sustainable tourism through conservation practices and low-impact activities (UNWTO, 2018). Furthermore, this aspect plays a significant role in enhancing the overall visitor experience within the destination. It also contributes to sustainable tourism development by balancing environmental conservation with economic benefits. Scholars emphasize that such initiatives improve destination competitiveness and long-term viability (UNWTO, 2019). In addition, community involvement ensures that tourism benefits are distributed more equitably among local stakeholders. Therefore, continuous improvement and strategic planning remain essential for maintaining high standards in the tourism sector.</p>
+
+<p>Local communities contribute cultural value and support inclusive tourism (Scheyvens, 2020). Furthermore, this aspect plays a significant role in enhancing the overall visitor experience within the destination. It also contributes to sustainable tourism development by balancing environmental conservation with economic benefits. Scholars emphasize that such initiatives improve destination competitiveness and long-term viability (UNWTO, 2019). In addition, community involvement ensures that tourism benefits are distributed more equitably among local stakeholders. Therefore, continuous improvement and strategic planning remain essential for maintaining high standards in the tourism sector.</p>
+
+</section>
+<footer><p>@2026 Kingdom In The Sky |Promoting Lesotho Tourism</p></footer>
+</body>
+</html>

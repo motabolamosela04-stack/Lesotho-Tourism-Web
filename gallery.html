@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Gallery</h1></header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="attractions.html">Attractions</a>
+<a href="tips.html">Travel Tips</a>
+<a href="blog.html">Travel Stories</a>
+<a href="gallery.html">Gallery</a>
+<a href="About.html">About Lesotho</a>
+<a href="references.html">References</a>
+</nav>
+
+<section class="content">
+<!--IMAGE SECTION-->
+<div class="slider">
+  <div class="slides" id="slides">
+  <h2>TOURISM IMAGE GALLERY</h2>
+  <p></p>
+  <div class="Gallery-drid">
+    <img src="basotho.jpg" alt="basotho traditions">
+    <img src="maletsunyane.jpeg" alt="maletsunyane">
+    <img src="thaba-bosiu.jpeg" alt="thaba-bosiu">
+    <img src="bokong.jpg" alt="bokong"> 
+    <img src="mountains.jpeg" alt="mountains">
+    <img src="sehlabathebe.jpg" alt="mountains">
+    <img src="1.jpg" alt="Bokong landscape">
+    <img src="2.jpg" alt="Maloti mountains">
+    <img src="3.jpg" alt="Waterfall">
+    <img src="4.jpg" alt="Hiking experience">
+  </div>
+</div>
+<div class="controls">
+  <button onclick="prev()">❮</button>
+  <button onclick="next()">❯</button>
+</div>
+
+<script>
+let i=0;
+const s=document.getElementById('slides');
+const total=10;
+function show(){ s.style.marginLeft = '-' + (i*100) + '%'; }
+function next(){ i=(i+1)%total; show(); }
+function prev(){ i=(i-1+total)%total; show(); }
+let auto=setInterval(next,4000);
+document.querySelector('.slider').addEventListener('mouseover',()=>clearInterval(auto));
+document.querySelector('.slider').addEventListener('mouseout',()=>auto=setInterval(next,4000));
+</script>
+</section>
+
+<p>Our gallery shows Lesotho through Basotho lenses, not filtered marketing shots. Every image is from a local potographer, guides, and travelers who tagged us. you' will see real weather, real roads , real faces. we update weekly with seasopnal photos: snow in july, flowers in November. CLICK any image for location, phothographer credit, and tips to get same shot. this proves Lesotho is Photogenic without fake edits. we want you to arrive and say "it looks like that pictures." Authenticity is our brand. this is why we do not use stock pictures.</p>
+
+<p>Images influence tourism decisions (Cooper et al., 2019). Furthermore, this aspect plays a significant role in enhancing the overall visitor experience within the destination. It also contributes to sustainable tourism development by balancing environmental conservation with economic benefits. Scholars emphasize that such initiatives improve destination competitiveness and long-term viability (UNWTO, 2019). In addition, community involvement ensures that tourism benefits are distributed more equitably among local stakeholders. Therefore, continuous improvement and strategic planning remain essential for maintaining high standards in the tourism sector.</p>
+
+<p>Effective communication is essential for tourism success, as it ensures that visitors have access to accurate and timely information. Contact channels such as websites, email, and phone services allow tourists to make inquiries and bookings easily. Good communication enhances customer satisfaction and builds trust between service providers and visitors. In the digital era, online platforms play a crucial role in connecting tourists with destinations. Responsive communication systems improve the overall visitor experience. Positive interactions encourage repeat visits and recommendations. Tourism businesses rely on strong communication strategies to remain competitive. Providing clear and accessible information supports tourism growth. Therefore, communication remains a critical factor in destination management (World Bank, 2023).</p>
+
+<p>Follow us for daiy updates, live weather, and roads conditions. instagram.@kinddominthesky-LS for photos and reels. facebook: Lesotho Tourism Official for events, festivals, and Q&A with locals. Tiktok:@visitlesotho for 30s pony trek and sani pass POVs. YouTube: full guides to afriski, Maletsunyane, and Thaba-busiu.</p>
+
+<p>Email: phaxmakoboshane@gmail.com for trip planning help. WhatsApp:+266 56453178, or call:+26662606477 for quick answers 8am-6pm, for emergencies, dial 112 for the police and 121 for ambulance. we partner with the Tourism Environmental Authority Lesotho for permits and virified guides.</p>
+
+<!--LINKS SECTION-->
+<div class="social-links">
+  <a href="https:www.facebook.com/visitLesotho/" target="_blank">Facebook</a>
+  <a href="https:www.Instagram.com/lesotho_tourism/" target="_blank">Instagram</a>
+  <a href="https:www.youtube.com/visitLesotho/" target="_blank">YouTube</a>
+  <a href="https:www.tiktok.com/visitLesotho/" target="_blank">TikTok</a>
+  <a href="https:www.vidmate.com/visitLesotho/" target="_blank">VidMate</a>
+</div>
+
+<!--CONTACT INFORMATION-->
+<div class="Contact-info">
+  <h3>contact information</h3>
+  <p><strong>Phone Number:</strong></p>
+  <ul>
+    <li>56453178</li>
+    <li>62606477</li>
+  </ul>
+  <p><strong>Email:</strong></p>
+  <p><a href="maito: phaxtheartists93@gmail.com"> phaxtheartists93@gmail.com</a></p>
+</div>
+
+<div>
+  <h3>Lesotho map</h3>
+  <img src="map.jpg" alt="Offline map for Lesotho">
+</div>
+
+
+</section>
+<footer><p>@2026 Kingdom In The Sky |Promoting Lesotho Tourism</p></footer>
+</body>
+</html>
