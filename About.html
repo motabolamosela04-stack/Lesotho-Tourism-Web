@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Home</h1></header>
+<div class="container">
+  <div class="logo">KINGDOM<span>IN</span>THE<span>SKY</span></div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="attractions.html">Attractions</a>
+<a href="tips.html">Travel Tips</a>
+<a href="blog.html">Travel Stories</a>
+<a href="gallery.html">Gallery</a>
+<a href="About.html">About Lesotho</a>
+<a href="references.html">References</a>
+</nav>
+
+<section class="content">
+
+<div class="slider">
+  <div class="slides" id="slides">
+    <img src="12.webp" alt="Bokong landscape">
+    <img src="house.jpg" alt="Maloti mountains">
+    <img src="Basotho.jpg" alt="Waterfall">
+    <img src="basotho2.jpg" alt="Hiking experience">
+    <img src="cloth.jpg" alt="Hiking experience">
+  </div>
+</div>
+<div class="controls">
+  <button onclick="prev()">❮</button>
+  <button onclick="next()">❯</button>
+</div>
+<script>
+let i=0;
+const s=document.getElementById('slides');
+const total=5;
+function show(){ s.style.marginLeft = '-' + (i*100) + '%'; }
+function next(){ i=(i+1)%total; show(); }
+function prev(){ i=(i-1+total)%total; show(); }
+let auto=setInterval(next,4000);
+document.querySelector('.slider').addEventListener('mouseover',()=>clearInterval(auto));
+document.querySelector('.slider').addEventListener('mouseout',()=>auto=setInterval(next,4000));
+</script>
+
+<h2>Basotho Cuisine</h2>
+
+<div class="container">
+<img src="mala moholu.jpg" alt="mala moholu">
+<img src="Nyekoe.webp" width="200" alt="nyekoe">
+<img src="platter.jpg" alt="platter">
+<img src="motoho.webp" alt="motoho">
+</div>
+
+<p>Lesotho’s cuisine reflects agricultural traditions and cultural identity through staple foods like papa and moroho. Meals are prepared using traditional methods and local ingredients. Culinary tourism allows visitors to experience authentic Basotho life. Food preparation promotes cultural exchange and learning. Rural communities benefit economically from tourism. The cuisine aligns with sustainable food trends. It enriches the tourism experience (Government of Lesotho, 2021).Traditional Basotho food includes papa (maize meal), moroho (greens), and nyama (meat). Meals are simple but nourishing, reflecting rural lifestyles.</p>
+
+
+
+  <h2>Clothing</h2>
+
+<img src="couple.jpg" alt= "seshoeshoe" class="gallery">
+<img src="tash.webp" alt= "Leqapha" class="gallery">
+<img src="mokorotlo.webp" alt= "mokorotlo" class="gallery">
+<img src="thethana.jpg" alt= "thethana" class="gallery">
+
+<p>The iconic Basotho blanket is worn as a symbol of identity and warmth. Traditional hats called 'mokorotlo' are also culturally significant. The Seanamarena Blankets is not just clothing; it's identity, status, and protection against mountain cold. Each pattern has meaning: the poone design is for prosperity, kharetsa for royalty, and Lehlanya for initiates. Men wear it over one shoulder, belted at the waist, with a mokorotlo hat made from woven grass. Children get their fisrt Blanket at birth and are buried in one at death. You can buy authentic blankets at Basotho hat in Maseru</p>
+
+  <h2>Dances</h2>
+<video width="720" height="360" controls>
+  <source src="B9.mp4" type="video/mp4">
+</video>
+
+<img src="ndlamo.jpg" alt= "ndlamo" class="gallery">
+<img src="mokhibo.jpg" alt= "mokhibo" class="gallery">
+
+<p>Basotho dances are energetic and rhythmic, often performed during celebrations and ceremonies with traditional music. Basotho Dance is a storytelling with the whole body,and you will hear it before you see it. famo is the most famous, dance, danced by men in the blankets with accordians and drums driving the bea. Dancers stomp, shout praise poetry called "lifela", and challenges each otherin fastwork battles. Women perform mokhibo, a kneeling dance with rhythmic shoulder shrugs and clapping that tell stories of dealy life. Mohobelo is danced by men in groups with high kicks and synchronized steps that shake the ground.</p>
+
+  <h2>Poems</h2>
+<video width="720" height="360" controls>
+  <source src="B10.mp4" type="video/mp4">
+</video>
+<p>Music plays a vital role in Basotho culture, with songs telling stories of history, daily life, and social values.Traditional music, dance, and poetry play a central role in Basotho culture and tourism. Performances reflect history, identity, and social values. Dance forms and storytelling preserve traditions. Tourists experience immersive cultural interactions. Local artists benefit economically. Cultural preservation is supported through tourism. These elements enhance visitor engagement (Ashworth, 2019).</p>
+
+
+
+</section>
+<footer><p>@2026 Kingdom In The Sky |Promoting Lesotho Tourism</p></footer>
+</body>
+</html>
